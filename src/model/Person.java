@@ -7,11 +7,21 @@ public class Person {
     private String lastName;
     private LocalDate dob;
     private Address address;
+    private Person spouse;
+    private Pet pet;
 
     public Person(String firstName, String lastName, LocalDate dob) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.dob = dob;
+    }
+
+    public Person getSpouse() {
+        return spouse;
+    }
+
+    public void setSpouse(Person spouse) {
+        this.spouse = spouse;
     }
 
     public String getFirstName() {
@@ -36,5 +46,13 @@ public class Person {
 
     public void setDob(LocalDate dob) {
         this.dob = dob;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }
